@@ -1,4 +1,4 @@
-class minecraft::{
+class minecraft{
     file {'/opt/minecraft':
         ensure => directory,
     }
@@ -20,4 +20,5 @@ class minecraft::{
     service {'minecraft':
         ensure => running,
         enable => true,
+    }
 }
